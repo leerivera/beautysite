@@ -413,3 +413,22 @@ nav {
   }
 
   /* end of choices */
+
+  
+  
+  
+  section#trusted-clients h4 {
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  section#trusted-clients .clients {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+  }
+
+  /* end clients */
