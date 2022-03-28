@@ -348,6 +348,85 @@
         
 
 
-		<script type="text/javascript" src="./main.js"></script>
+        <footer>
+            <div class="container">
+                <div class="f1">
+                    <div class="logo">
+                        <img src="./images/logo.png">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam!</p>
+                    <div class="subscribe">
+                        <input type="email" placeholder="Enter Email">
+                        <button><i class="uil uil-arrow-right"></i></button>
+                    </div>
+                </div>
+    
+                <div class="f2">
+                    <h4>Permanlinks</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#why-choose-us">Why choose us?</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="contact.html">Let's talk</a></li>
+                    </ul>
+                </div>
+    
+                <div class="f3">
+                    <h4>Privacy</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+    
+                <div class="f4">
+                    <h4>Contact Us</h4>
+                    <p>
+                        +(233) 345 6789<br/>
+                        support@egattor.com
+                    </p>
+                    <ul class="socials">
+                        <li><a href="https://instagram/apple" target="_blank"><i class="uil uil-instagram-alt"></i></a></li>
+                        <li><a href="https://facebook/apple" target="_blank"><i class="uil uil-facebook"></i></a></li>
+                        <li><a href="https://twitter/apple" target="_blank"><i class="uil uil-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="copyright">
+                <small>Copyright &copy; EGATOR YouTube Tutorials</small>
+            </div>
+        </footer>
+    
+        <!-- SWIPER JS CDN -->
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <script src="./main.js"></script>
+    
+        <script>
+            
+            // swiper js (testimonial section)
+        const swiper = new Swiper('.swiper', {
+            pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            },
+        });
+    
+            // open video
+            const showCommercialBtn = document.querySelector("#show-commercial-btn");
+            const commercial = document.querySelector("#commercial");
+            showCommercialBtn.addEventListener('click', () => {
+                commercial.style.display = "grid";
+            });
+    
+            // close video
+            document.body.addEventListener('click', (e) => {
+                if(e.target.id === "commercial") {
+                    commercial.style.display = "none";
+                }
+            })
+        </script>
 	</body>
 </html>
