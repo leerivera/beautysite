@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #f24822;
+    --color-primary: #2252f2;
     --color-primary-variant: #ffc7bb;
     --color-black: #0a0a0c;
     --color-dark: #62656a;
@@ -692,7 +692,7 @@ nav {
   }
 
   /* ==================== NAVBAR ===================== */
-  nav .container .icons {
+  nav .container .icons .logo {
     gap: 1rem;
   }
 
