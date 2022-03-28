@@ -260,3 +260,40 @@ nav {
   }
 
   /* commercial end */
+
+  
+  
+  
+  section#products .container {
+    width: 56%;
+  }
+  
+  section#products .container > h2,
+  section#products .container > p {
+    text-align: center;
+  }
+  
+  section#products article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  
+  section#products article p {
+    margin: 1.5rem 0 1rem;
+  }
+  
+  section#products article:last-child {
+    grid-template-columns: 60% 40%;
+  }
+  
+  section#products article:last-child .image {
+    margin-right: -8rem;
+  }
+  
+  section#products a:hover {
+    text-decoration: underline;
+  }
+
+  /* end products */
